@@ -5,9 +5,14 @@ import * as speakersJson from '../data/speakers.json'
 import SpeakerCard, { SpeakerCardProps } from './atoms/SpeakerCard'
 const StackGrid = require('react-stack-grid').default
 const slice = require('lodash/slice')
+import { ON_MOBILE } from './atoms/Responsive'
 
 const CardRow = styled.div`
   padding: 0 30px;
+
+  @media ${ON_MOBILE} {
+    padding: 0 10px;
+  }
 `
 
 const MoreButton = styled.button`
@@ -17,6 +22,7 @@ const MoreButton = styled.button`
   height: 44px;
   font-size: 16px;
   border: 1px solid black;
+  background: white;
   cursor: pointer;
   margin: auto;
   margin-top: 25px;
@@ -39,7 +45,7 @@ class SpeakerSection extends React.Component<{}> {
     return (
       <SectionTemplate title="발표자" iconClass="fa fa-microphone fa-2x">
         <CardRow>
-          <StackGrid columnWidth={320}>
+          <StackGrid columnWidth={280} gutterWidth={0}>
             {speakers.map((item: SpeakerCardProps) => (
               <SpeakerCard {...item} />
             ))}

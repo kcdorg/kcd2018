@@ -1,9 +1,14 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import { ON_MOBILE } from './Responsive'
 
 const Padding = styled.div`
   box-sizing: border-box;
   padding: 0 10px;
+
+  @media ${ON_MOBILE} {
+    padding: 0;
+  }
 `
 
 const Wrapper = styled.div`
@@ -47,6 +52,7 @@ const Text = styled.div`
   color: #6b7684;
   text-align: left;
   line-height: 1.8;
+  word-break: break-all;
 `
 
 const Profile = Text.extend`
