@@ -45,7 +45,7 @@ class SpeakerSection extends React.Component<{}> {
     return (
       <SectionTemplate title="발표자" iconClass="fa fa-microphone fa-2x">
         <CardRow>
-          <StackGrid columnWidth={280}>
+          <StackGrid columnWidth={280} gutterWidth={10}>
             {speakers.map((item: SpeakerCardProps) => (
               <SpeakerCard {...item} />
             ))}
