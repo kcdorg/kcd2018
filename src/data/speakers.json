@@ -23,7 +23,7 @@
     {
       "community": "Elastic",
       "name": "김종민",
-      "images": [],
+      "images": ["speakers/김종민_엘라스틱.jpg"],
       "profile":
         "한국에서 Elastic의 에반젤리스트로 근무중이며, 커뮤니티의 운영과 Elastic Stack에 대한 전반적인 기술 업무를 담당하고 있습니다. \"사작하세요 엘라스틱서치 (위키북스)\"의 저자이며 Elasticsearch 기술과 관련한 블로그 및 칼럼 등을 쓰고 있습니다.",
       "title": "Elastic에서 원격으로 일하는 방법들",
@@ -83,7 +83,7 @@
     {
       "community": "Taeyo.Net 커뮤니티",
       "name": "박용준",
-      "images": [],
+      "images": ["speakers/박용준.jpg"],
       "profile":
         "Visual Studio 분야 Microsoft 공인 강사(MCT)를 거쳐 2006년부터 12년 연속 Visual Studio and Development Technologies 분야 Microsoft MVP로 활동하고 있다. TechDays, WebCamp 등 다양한 Microsoft 기술 세미나의 스피커로 활동하며 다수의 책을 집필하고 번역하고, Taeyo.NET, ASP.NET Korea User Group 커뮤니티에 운영진으로 참여하고 있다.",
       "title": "ASP.NET, Angular, Azure를 사용한 웹 개발 빠르게 살펴보기",

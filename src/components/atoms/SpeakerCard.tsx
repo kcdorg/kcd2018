@@ -5,6 +5,7 @@ import { ON_MOBILE } from './Responsive'
 const Padding = styled.div`
   box-sizing: border-box;
   padding: 0 10px;
+  margin-bottom: 10px;
 
   @media ${ON_MOBILE} {
     padding: 0;
