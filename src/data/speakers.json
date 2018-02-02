@@ -187,6 +187,15 @@
     },
     {
       "community": "스파크사용자모임 커뮤니티",
+      "name": "김상우",
+      "images": ["speakers/김상우_스파크.jpg"],
+      "profile": "스사모 (스파크 사용자 모임) 공동설립, 운영자",
+      "title": "Spark Summit Europe 발표 & 참가기",
+      "content":
+        "스사모에서 데이터 분야의 큰 행사 중 하나인 Spark Summit EU 2017에 참가하여 세션과 토론 등에 참여하고 발표도 하고 온 경험을 공유해 보려고 합니다."
+    },
+    {
+      "community": "하모니카(HarmonyCar) 커뮤니티",
       "name": "유명환",
       "images": ["speakers/유명환_하모니카.png"],
       "profile":
