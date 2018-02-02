@@ -158,14 +158,14 @@
         "저는 일본의 오픈 소스 커뮤니티에서 활동하고 있습니다. 저는 제가 참여하고 있는 일본에서의 오픈 소스 커뮤니티 활동과 컨퍼런스 활동에 대해 말씀 드리겠습니다.\n\nI am active in the open source community in Japan. I will talk about the open source community activities and the activities of the conference in Japan that I am involved in."
     },
     {
-      "community": "ASP.Net User Gruop",
+      "community": "ASP.NET Korea User Group",
       "name": "한상훈",
       "images": ["speakers/한상훈.jpg"],
       "profile":
         "열정, 긍정, 순정을 빼면 아무것도 남는 게 없는 열혈 개발자로 주로 웹 및 윈도우 기반 개발 업무를 담당하고 있다. 2010년부터 지금까지 마이크로소프트 MVP로 활동하고 있고, 국내 최고의 .NET 커뮤니티인 Taeyo.NET과 ASP.NET Korea User Group에서 운영진으로 활동하고 있다. 후배양성만이 개발자들이 살아갈 수 있는 방법이라 믿고 있으며, 잘난 개발자보다는 좋은 개발자가 되는 것을 목표로 오늘도 열심히 달리고 있다.",
       "title": "I am ASP.NET Core Razor Pages!",
       "content":
-        "- 더 쉽고, 빠르게 ASP.NET Core 웹앱을 만들 수 있는 Razor Pages에 대해 알아보고\n- Razor Pages를 이용하여 간단한 웹앱을 만드는 과정을 살펴봅니다."
+        "더 쉽고, 빠르게 ASP.NET Core 웹앱을 만들 수 있는 Razor Pages에 대해 알아보고 Razor Pages를 이용하여 간단한 웹앱을 만드는 과정을 살펴봅니다."
     },
     {
       "community": "JBoss User Group",
