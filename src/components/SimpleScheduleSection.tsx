@@ -110,7 +110,7 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
           </Row>
           <Row>
             <Header>14:40 ~ 15:20</Header>
-            <Data>오라클</Data>
+            <Data>MySQL</Data>
             <Data>EFL 한국 커뮤니티</Data>
             <Data>C++ Korea</Data>
           </Row>

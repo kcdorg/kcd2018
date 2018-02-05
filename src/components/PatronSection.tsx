@@ -57,6 +57,7 @@ const Body = styled.div`
   font-size: 15px;
   white-space: pre-line;
   line-height: 1.6;
+  word-break: break-all;
 `
 
 interface PatronData {
