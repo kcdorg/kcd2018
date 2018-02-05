@@ -146,7 +146,8 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
       </Table>
     </Wrapper>
     <Notice>
-      ※ Workshop 참가를 원하는 경우 참가하고자 하는 Worksop을 작성하시어
+      ※ Workshop은 개인 노트북을 지참하셔야 합니다. <br />Hands on Lab 형태로
+      진행하기에 참가를 원하는 경우 참가하고자 하는 Workshop을 작성하시어
       spicalong@gmail.com으로 별도 신청을 부탁드립니다.
     </Notice>
   </SectionTemplate>
