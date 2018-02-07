@@ -152,7 +152,10 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
               <br />박혜선 (오라클)
             </Data>
             <Data>EFL 한국 커뮤니티</Data>
-            <Data>C++ Korea</Data>
+            <Data>
+              C++ 프로젝트의 자동 빌드화<br />
+              <br />C++ Korea
+            </Data>
           </Row>
           <Row>
             <Header>15:20 ~ 16:00</Header>
