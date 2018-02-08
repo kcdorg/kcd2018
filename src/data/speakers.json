@@ -120,12 +120,14 @@
         "MySQL8.0에서 업데이트된 기능 및 MySQL의 Native한 HA솔루션인 InnDB Cluster에 대해 소개해 드립니다."
     },
     {
-      "community": "EFL 커뮤니티",
-      "name": "",
-      "images": [],
-      "profile": "",
-      "title": "",
-      "content": ""
+      "community": "EFL 한국 커뮤니티",
+      "name": "엄지용",
+      "images": ["speakers/엄지용_EFL.jpg"],
+      "profile":
+        "EFL 프로젝트의 Committer이며 타이젠 개발에 참여하였습니다. 현재는 자연어 처리 분야를 연구하고 있습니다.",
+      "title": "가내수공 App for your Smartwatch (feat. Gear S2/3)",
+      "content":
+        "EFL을 활용하여 간단한 스마트워치용 어플리케이션을 개발해봅니다. 대부분의 개발자가 타이젠 앱 개발 중 어려움을 느끼는 부분에 대해 함께 풀어나갈 예정입니다."
     },
     {
       "community": "C++ Korea",

@@ -151,7 +151,7 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
               What’s new in MySQL8.0<br />
               <br />박혜선 (오라클)
             </Data>
-            <Data>EFL 한국 커뮤니티</Data>
+            <Data>가내수공 App for your Smartwatch (feat. Gear S2/3)<br /><br />엄지용 (EFL 한국 커뮤니티)</Data>
             <Data>
               C++ 프로젝트의 자동 빌드화<br />
               <br />C++ Korea
