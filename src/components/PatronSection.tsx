@@ -63,16 +63,24 @@ const Body = styled.div`
 interface PatronData {
   image: string
   title: string
-  link: string
-  url: string
+  links: string[]
+  urls: string[]
   content: string
+}
+
+const mapLinks = (links: string[], urls: string[]) => {
+  return links.map((link, index) => (
+    <a target="_blank" href={urls[index]}>
+      {link + ' '}
+    </a>
+  ))
 }
 
 const PatronCard: React.StatelessComponent<PatronData> = ({
   image,
   title,
-  link,
-  url,
+  links,
+  urls,
   content
 }) => (
   <Card>
@@ -80,11 +88,7 @@ const PatronCard: React.StatelessComponent<PatronData> = ({
       <Image src={image} />
     </ImageRow>
     <Title>{title}</Title>
-    <Link>
-      <a target="_blank" href={url}>
-        {link}
-      </a>
-    </Link>
+    <Link>{mapLinks(links, urls)}</Link>
     <Body>{content}</Body>
   </Card>
 )
