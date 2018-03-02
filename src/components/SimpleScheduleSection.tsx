@@ -53,6 +53,23 @@ const Red = styled.div`
   color: orangered;
 `
 
+const FileLink = styled.a.attrs({
+  target: '_blank'
+})`
+  color: lightcoral;
+  text-decoration: none;
+`
+
+interface FileProps {
+  href: string
+}
+
+const File: StatelessComponent<FileProps> = ({ children, href }) => (
+  <div style={{ marginTop: '10px' }}>
+    <FileLink href={href}>{children ? children : '발표자료'}</FileLink>
+  </div>
+)
+
 const SimpleScheduleSection: StatelessComponent<{}> = () => (
   <SectionTemplate title="스케쥴" iconClass="fa fa-clock-o fa-2x">
     <Wrapper>
@@ -106,19 +123,27 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
             <Data>
               '모두의 손에 딥러닝 툴을...'<br />
               <br />김태영, 전미정(Keras Korea)
+              <br />
+              <File href="https://tykimos.github.io/2018/02/24/Deep_Learning_Tool_in_Everyones_hands/" />
             </Data>
             <Data>
               차곡차곡 쉽게 알아가는 Elasticsearch와 Node.js<br />
               <br />황희정(자바카페)
+              <br />
+              <File href="http://tech.javacafe.io/2018/02/24/%EC%B0%A8%EA%B3%A1%EC%B0%A8%EA%B3%A1_%EC%89%BD%EA%B2%8C_%EC%95%8C%EC%95%84%EA%B0%80%EB%8A%94_Elasticsearch%EC%99%80_Nodejs/" />
             </Data>
             <Data>
               클라우드 API를 활용하여 FirstApp 모바일 앱 빠르게 구현하기<br />
               <br />최영락 (오픈스택 한국 커뮤니티)
+              <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%8E%E1%85%AC%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A1%E1%86%A8(%E1%84%8B%E1%85%A9%E1%84%91%E1%85%B3%E1%86%AB%E1%84%89%E1%85%B3%E1%84%90%E1%85%A2%E1%86%A8)-%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A1%E1%84%8B%E1%85%AE%E1%84%83%E1%85%B3+API%E1%84%85%E1%85%B3%E1%86%AF+%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%84%8B%E1%85%A7+FirstApp+%E1%84%86%E1%85%A9%E1%84%87%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF+%E1%84%8B%E1%85%A2%E1%86%B8+%E1%84%88%E1%85%A1%E1%84%85%E1%85%B3%E1%84%80%E1%85%A6+%E1%84%80%E1%85%AE%E1%84%92%E1%85%A7%E1%86%AB%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5.pdf" />
             </Data>
             <Data rowSpan={4}>
               <Red>Workshop 1</Red>
               <br />Custom Vision으로 나만의 이미지 분류 모델 만들어보기<br />
               <br />김은지 (Microsoft)
+              <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%80%E1%85%B5%E1%86%B7%E1%84%8B%E1%85%B3%E1%86%AB%E1%84%8C%E1%85%B5(MS%E1%84%8B%E1%85%AF%E1%84%8F%E1%85%B3%E1%84%89%E1%85%A3%E1%86%B8)_KCD_Custom+Vision+HOL_EUNK.pdf" />
             </Data>
             <Data rowSpan={4}>
               <Red>Workshop 2</Red>
@@ -139,6 +164,8 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
             <Data>
               Hello world 에서 패키징까지<br />
               <br />김진석 (우분투 한국커뮤니티)
+              <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%80%E1%85%B5%E1%86%B7%E1%84%8C%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8(%E1%84%8B%E1%85%AE%E1%84%87%E1%85%AE%E1%86%AB%E1%84%90%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%80%E1%85%AE%E1%86%A8)_Hello%2C+world%E1%84%8B%E1%85%A6%E1%84%89%E1%85%A5+%E1%84%91%E1%85%A2%E1%84%8F%E1%85%B5%E1%84%8C%E1%85%B5%E1%86%BC%E1%84%81%E1%85%A1%E1%84%8C%E1%85%B5.pdf" />
             </Data>
           </Row>
           <Row>
@@ -150,11 +177,20 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
             <Data>
               What’s new in MySQL8.0<br />
               <br />박혜선 (오라클)
+              <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%87%E1%85%A1%E1%86%A8%E1%84%92%E1%85%A8%E1%84%89%E1%85%A5%E1%86%AB(%E1%84%8B%E1%85%A9%E1%84%85%E1%85%A1%E1%84%8F%E1%85%B3%E1%86%AF)_WhatsNewInMySQL8.0_KR_V2.pdf" />
             </Data>
-            <Data>가내수공 App for your Smartwatch (feat. Gear S2/3)<br /><br />엄지용 (EFL 한국 커뮤니티)</Data>
+            <Data>
+              가내수공 App for your Smartwatch (feat. Gear S2/3)<br />
+              <br />엄지용 (EFL 한국 커뮤니티)
+              <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/efl_kcd2018.pdf" />
+            </Data>
             <Data>
               C++ 프로젝트의 자동 빌드화<br />
               <br />C++ Korea
+              <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%87%E1%85%A1%E1%86%A8%E1%84%83%E1%85%A9%E1%86%BC%E1%84%92%E1%85%A1(C%2B%2B%E1%84%8F%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A1)_Build+Automation+of+C%2B%2B+Project.pptx" />
             </Data>
           </Row>
           <Row>
@@ -162,24 +198,34 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
             <Data>
               챗봇 서비스에서 MongoDB의 활용<br />
               <br />김동한 (MongoDB Korea)
+              <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%80%E1%85%B5%E1%86%B7%E1%84%83%E1%85%A9%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB(MongoDB)_MongoDB+in+Chat+Bot+-+KCD+2018+Public.pdf" />
             </Data>
             <Data>
               About Open Source Community in Japan<br />
               <br />Nogata Jun (Debian JP, 영어발표)
+              <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/NogataJun(Japan)-kcd_opensource_community.pdf" />
             </Data>
             <Data>
               I am ASP.NET Core Razor Pages!<br />
               <br />한상훈 (ASP.NET Korea User Group)
+              <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%92%E1%85%A1%E1%86%AB%E1%84%89%E1%85%A1%E1%86%BC%E1%84%92%E1%85%AE%E1%86%AB(ASP.Net)_I+am+ASP.NET+Core+Razor+Pages.pdf" />
             </Data>
             <Data rowSpan={4}>
               <Red>Workshop 3</Red>
               <br />BlockChain In BitCoin<br />
               <br />이태영(Jboss User Group)
+              <br />
+              <File href="https://www.slideshare.net/taeyounglee1447/blockchain-and-ethereum-develop?from_m_app=android" />
             </Data>
             <Data rowSpan={4}>
               <Red>Workshop 4</Red>
               <br />타이디(tidyverse)와 당근(caret)으로 캐글(kaggle) 입문하기<br />
               <br />캐글뽀개기 커뮤니티
+              <br />
+              <File href="https://github.com/KaggleBreak/walkingkaggle/tree/master/kcd2018" />
             </Data>
           </Row>
           <Row>
@@ -195,10 +241,14 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
             <Data>
               Beyond Automotive<br />
               <br />유명환(하모니카 (HarmonyCar))
+              <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/7th_KCD_HarmonyCar_funfunyoo.pptx" />
             </Data>
             <Data>
               한국어 임베딩<br />
               <br />박혜웅(바벨피쉬)
+              <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%87%E1%85%A1%E1%86%A8%E1%84%92%E1%85%A8%E1%84%8B%E1%85%AE%E1%86%BC(%E1%84%87%E1%85%A1%E1%84%87%E1%85%A6%E1%86%AF%E1%84%91%E1%85%B5%E1%84%89%E1%85%B1)%E1%84%92%E1%85%A1%E1%86%AB%E1%84%80%E1%85%AE%E1%86%A8%E1%84%8B%E1%85%A5%E1%84%8B%E1%85%B5%E1%86%B7%E1%84%87%E1%85%A6%E1%84%83%E1%85%B5%E1%86%BC.pdf" />
             </Data>
           </Row>
           <Row>
@@ -207,11 +257,15 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
               물어본적 없습니다만,(부제:믿고 거르는 커리어 이야기)<br />
               <br />
               박상현(코딩이랑 무관합니다만)
+              <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%87%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A1%E1%86%BC%E1%84%92%E1%85%A7%E1%86%AB(%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%E1%84%80%E1%85%AA%E1%84%86%E1%85%AE%E1%84%80%E1%85%AA%E1%86%AB%E1%84%92%E1%85%A1%E1%86%B8%E1%84%82%E1%85%B5%E1%84%83%E1%85%A1%E1%84%86%E1%85%A1%E1%86%AB)_%E1%84%86%E1%85%AE%E1%86%AF%E1%84%8B%E1%85%A5%E1%84%87%E1%85%A9%E1%84%8C%E1%85%B5+%E1%84%8B%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%A1%E1%86%BB%E1%84%89%E1%85%B3%E1%86%B8%E1%84%82%E1%85%B5%E1%84%83%E1%85%A1%E1%84%86%E1%85%A1%E1%86%AB+V8.pptx" />
             </Data>
             <Data>
               Webpack, ES6, TS로 만든 React datagrid 컴포넌트 제작기<br />
               <br />
               장기영(자바스크립트 개발자 포럼)
+              <br />
+              <File href="http://slides.com/chequer/axdatagrid-first" />
             </Data>
             <Data>
               Google Polymer in Action<br />
