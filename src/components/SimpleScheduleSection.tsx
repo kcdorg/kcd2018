@@ -104,6 +104,8 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
             <Data>
               IoT 로 농업데이터 수집하는 개발자 커뮤니티 - 컨트리뷰터 모집<br />
               <br />김종광 (IoT Labs)
+              <br />
+              <File href="https://www.dropbox.com/s/tmig6fy27xyqbe3/2017_Contributhon_IoTLabs.pdf?dl=0" />
             </Data>
             <Data rowSpan={2} />
           </Row>
@@ -112,6 +114,8 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
             <Data>
               Elastic에서 원격으로 일하는 방법들<br />
               <br />김종민 (Elastic)
+              <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/kr.elastic.co/docs/jongmin-kim-Korea-Community-Day.pdf" />
             </Data>
           </Row>
           <Row>
@@ -149,6 +153,7 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
               <Red>Workshop 2</Red>
               <br />Docker과 Azure<br />
               <br />김세준 Korea Azure User Group (KRAZURE)
+              <File href="https://goo.gl/WgV3PW" />
             </Data>
           </Row>
           <Row>
@@ -156,6 +161,8 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
             <Data>
               ASP.NET, Angular, Azure를 사용한 웹 개발 빠르게 살펴보기<br />
               <br />박용준 (Taeyo.NET)
+              <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/ASP.NET+Core+and+Angular+and+Azure+20180224.pptx" />
             </Data>
             <Data>
               IntelliJ IDEA만으로 개발하기<br />
@@ -188,7 +195,7 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
             </Data>
             <Data>
               C++ 프로젝트의 자동 빌드화<br />
-              <br />C++ Korea
+              <br />박동하 (C++ Korea)
               <br />
               <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%87%E1%85%A1%E1%86%A8%E1%84%83%E1%85%A9%E1%86%BC%E1%84%92%E1%85%A1(C%2B%2B%E1%84%8F%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A1)_Build+Automation+of+C%2B%2B+Project.pptx" />
             </Data>
@@ -270,6 +277,7 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
             <Data>
               Google Polymer in Action<br />
               <br />신정규(TNF/Needlworks)
+              <File href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.slideshare.net%2Finureyes%2Fgoogle-polymer-in-action&h=ATP_ZWQzJgYpxTsIpE_4Mz_X9HyQ2Cq6gDXD9f6lrPMurI1o7n0yd9dcMT-Qe2ETvfkYqMlCDbym3WxVt3H5qxYvDgcUM2klXgvtHflZdRhEKXhqh7gPkcIlztI" />
             </Data>
           </Row>
           <Row>
