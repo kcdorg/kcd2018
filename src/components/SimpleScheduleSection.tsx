@@ -244,6 +244,8 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
             <Data>
               Spark Summit Europe 발표 & 참가기<br />
               <br />김상우(스파크 사용자 모임)
+              <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/KCD_Spark_Summit_%E1%84%80%E1%85%B5%E1%86%B7%E1%84%89%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%AE.pdf" />
             </Data>
             <Data>
               Beyond Automotive<br />
