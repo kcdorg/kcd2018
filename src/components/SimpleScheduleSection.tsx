@@ -224,8 +224,6 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
               <Red>Workshop 3</Red>
               <br />BlockChain In BitCoin<br />
               <br />이태영(Jboss User Group)
-              <br />
-              <File href="https://www.slideshare.net/taeyounglee1447/blockchain-and-ethereum-develop?from_m_app=android" />
             </Data>
             <Data rowSpan={4}>
               <Red>Workshop 4</Red>
