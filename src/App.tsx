@@ -15,6 +15,9 @@ import InquirySection from './components/InquirySection'
 const Wrapper = styled.div`
   width: 100%;
   height: 100%;
+  a {
+    text-decoration: none !important;
+  }
 `
 
 class App extends React.Component {

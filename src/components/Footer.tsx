@@ -38,7 +38,7 @@ const CC = styled.div`
 
 const Footer: React.StatelessComponent<{}> = () => (
   <Wrapper>
-    <Logo src="logo-white.png" />
+    <Logo src="kcd2019-white.png" />
     <SocialIconRow>
       <SocialIcon
         className="fa fa-facebook"

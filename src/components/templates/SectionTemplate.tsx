@@ -14,13 +14,13 @@ export const IconRow = styled.div`
 `
 
 export const Icon = styled.span`
-  color: mediumvioletred;
+  color: #e18970;
 `
 
 export const Title = styled.h4`
   text-align: center;
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 2.5rem;
+  font-weight: 600;
   margin-top: 5px;
 
   @media ${ON_MOBILE} {
@@ -37,7 +37,7 @@ interface SectionTemplateProps {
 const SectionTemplate: React.StatelessComponent<SectionTemplateProps> = ({
   title,
   iconClass,
-  children
+  children,
 }) => (
   <Wrapper>
     <IconRow>
