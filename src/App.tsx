@@ -11,6 +11,7 @@ import PriceSection from './components/PriceSection'
 import FAQSection from './components/FAQSection'
 import CommunitySection from './components/CommunitySection'
 import InquirySection from './components/InquirySection'
+import NavigationBar from './components/Navigation'
 
 const Wrapper = styled.div`
   width: 100%;
@@ -23,19 +24,22 @@ const Wrapper = styled.div`
 class App extends React.Component {
   render() {
     return (
-      <Wrapper>
-        <Header />
-        <IntroSection />
-        <SimpleScheduleSection />
-        <SpeakerSection />
-        <LocationSection />
-        <PriceSection />
-        <FAQSection />
-        <PatronSection />
-        <CommunitySection />
-        <InquirySection />
-        <Footer />
-      </Wrapper>
+      <>
+        <NavigationBar />
+        <Wrapper>
+          <Header />
+          <IntroSection />
+          <SimpleScheduleSection />
+          <SpeakerSection />
+          <LocationSection />
+          <PriceSection />
+          <FAQSection />
+          <PatronSection />
+          <CommunitySection />
+          <InquirySection />
+          <Footer />
+        </Wrapper>
+      </>
     )
   }
 }

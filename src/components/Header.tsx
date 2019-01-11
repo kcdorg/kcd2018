@@ -6,8 +6,8 @@ const Wrapper = styled.div`
   text-align: center;
   background: url('namsan.png') no-repeat center center;
   background-size: cover;
-  padding-top: 92px;
-  padding-bottom: 100px;
+  padding-top: 110px;
+  padding-bottom: 150px;
 `
 
 const Logo = styled.img`

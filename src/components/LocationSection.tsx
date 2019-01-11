@@ -4,7 +4,7 @@ import { Title, IconRow, Icon } from './templates/SectionTemplate'
 
 const Wrapper = styled.div`
   width: 100%;
-  background: url('venue-bg.jpg') no-repeat center center;
+  background: url('venue-bg.png') no-repeat center center;
   background-size: cover;
   padding: 40px 0;
   display: flex;
@@ -49,8 +49,9 @@ const LocationSection: React.StatelessComponent<{}> = () => (
       <Title>위치</Title>
       <Location>
         <a target="_blank" href="https://goo.gl/maps/bGuovKiiUJP2">
-          <span className="fa fa-external-link" /> 한국 Microsoft 11층<br />(광화문
-          더케이트윈타워 A동)
+          <span className="fa fa-external-link" /> 한국 Microsoft 11층
+          <br />
+          (광화문 더케이트윈타워 A동)
         </a>
       </Location>
       <Address>서울특별시 종로구 중학동 종로 1길 50</Address>

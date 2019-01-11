@@ -24,7 +24,7 @@ const Head = styled.div`
 `
 
 const DownIcon = styled.span.attrs({
-  className: 'fa fa-angle-down'
+  className: 'fa fa-angle-down',
 })`
   margin-left: auto;
 `
@@ -58,7 +58,7 @@ interface FAQData {
 
 class FAQSection extends React.Component<{}> {
   state = {
-    activeIndex: -1
+    activeIndex: -1,
   }
 
   handleClick = (index: number) => {

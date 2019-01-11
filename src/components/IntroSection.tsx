@@ -9,33 +9,33 @@ const Wrapper = styled.div`
   justify-content: center;
 `
 
-const Title = styled.div`
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 500px;
-  padding: 30px 40px;
-  border: 5px solid #85144b;
-  margin: 10px;
-  font-size: 32px;
-  text-align: center;
-  color: #5e5e5e;
-  word-break: keep-all;
+// const Title = styled.div`
+//   box-sizing: border-box;
+//   width: 100%;
+//   max-width: 500px;
+//   padding: 30px 40px;
+//   border: 5px solid #85144b;
+//   margin: 10px;
+//   font-size: 32px;
+//   text-align: center;
+//   color: #5e5e5e;
+//   word-break: keep-all;
 
-  @media ${ON_MOBILE} {
-    font-size: 23px;
-    padding: 30px 20px;
-  }
-`
+//   @media ${ON_MOBILE} {
+//     font-size: 23px;
+//     padding: 30px 20px;
+//   }
+// `
 
-const Bold = styled.span`
-  font-weight: bold;
-  font-size: 35px;
-  color: #3a3a3a;
+// const Bold = styled.span`
+//   font-weight: bold;
+//   font-size: 35px;
+//   color: #3a3a3a;
 
-  @media ${ON_MOBILE} {
-    font-size: 25px;
-  }
-`
+//   @media ${ON_MOBILE} {
+//     font-size: 25px;
+//   }
+// `
 
 // const List = styled.div`
 //   box-sizing: border-box;
@@ -59,16 +59,52 @@ const Bold = styled.span`
 //   color: #555578;
 // `
 
+// const TitleWrapper = styled.div``
+
+const LeftTitle = styled.div`
+  line-height: 1.1;
+  margin: 10px 0 0 50px;
+  font-size: 2.1rem;
+  font-weight: 600;
+  @media ${ON_MOBILE} {
+    font-size: 25px;
+  }
+`
+
+const ImageWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const LogoImage = styled.img`
+  height: 500px;
+  @media ${ON_MOBILE} {
+    height: 400px;
+  }
+`
+
 const IntroSection: React.StatelessComponent<{}> = () => (
-  <SectionTemplate title="소개" iconClass="fa fa-envelope-o fa-2x">
+  <SectionTemplate title="" iconClass="">
+    <LeftTitle>
+      Community에 의한,
+      <br />
+      Community를 위한,
+      <br />
+      대한민국 최대 규모의
+      <br />
+    </LeftTitle>
     <Wrapper>
-      <Title>
+      <ImageWrapper>
+        <LogoImage src="color-logo.png" />
+      </ImageWrapper>
+      {/* <Title>
         커뮤니티의,<br />커뮤니티에 의한,<br />커뮤니티를 위한<br />
         <br />
         <Bold>
           대한민국 최대 규모의<br />커뮤니티 소통의 장!
         </Bold>
-      </Title>
+      </Title> */}
       {/*
       <List>
         <p>
