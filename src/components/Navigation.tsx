@@ -50,13 +50,17 @@ const BarWrapper = styled.div`
   ${(p: any) =>
     p.sticky &&
     css`
-      height: 47px;
-      background-color: rgba(50, 50, 50, 0.3);
-    `};
+      height: 55px;
+      background-color: rgba(50, 50, 50, 0.7);
+    `}
 `
 
 const LogoBox = styled(Box)`
   width: 20%;
+  padding-left: 25px;
+  @media ${ON_MOBILE} {
+    padding-left: 10px;
+  }
 `
 const Menu = styled(Box)`
   /* flex-direction: row-reverse; */
@@ -70,6 +74,11 @@ const Menu = styled(Box)`
 
 const ExternalLogo: any = styled.img`
   height: ${(p: any) => p.size || 30}px;
+  /* ${(p: any) =>
+    p.top &&
+    css`
+      display: none;
+    `}; */
   /* width: ${(p: any) => p.size || 30}px; */
 `
 
@@ -83,6 +92,11 @@ const MenuLink: any = styled(Button)`
   line-height: inherit;
   word-break: keep-all;
   transition: all 0.1s ease;
+  /* ${(p: any) =>
+    p.top &&
+    css`
+      display: none;
+    `}; */
 
   &:hover,
   &:focus {
@@ -187,6 +201,8 @@ class NavigationBar extends React.Component<{}, NavigationBarState> {
   }
 
   render() {
+    const { isSticky } = this.state
+    const isTop = !isSticky
     return (
       <BarWrapper sticky={this.state.isSticky}>
         <Container flexWrap="wrap" px={2}>
@@ -194,32 +210,47 @@ class NavigationBar extends React.Component<{}, NavigationBarState> {
             {/* <FestaLogoAdjuster>
               <FestaLogo size={50} />
             </FestaLogoAdjuster> */}
-            <ExternalLogo src={'nav-logo.png'} />
+            <ExternalLogo size={26} top={isTop} src={'nav-logo.png'} />
           </LogoBox>
           <Menu>
             <MenuLink
+              top={isTop}
               onClick={() => {
                 this.scrollTo(0)
               }}
             >
               Home
             </MenuLink>
-            <CustomLink to="info">
-              <MenuLink hide={true}>Info</MenuLink>
-            </CustomLink>
+
             <CustomLink to="schedule">
-              <MenuLink hide={true}>시간표</MenuLink>
+              <MenuLink top={isTop} hide={true}>
+                시간표
+              </MenuLink>
             </CustomLink>
             <CustomLink to="speakers">
-              <MenuLink>Speakers</MenuLink>
+              <MenuLink top={isTop}>Speakers</MenuLink>
             </CustomLink>
-            <CustomLink to="tickets">
-              <MenuLink hide={true}>Tickets</MenuLink>
+            <CustomLink to="location">
+              <MenuLink top={isTop} hide={true}>
+                위치
+              </MenuLink>
+            </CustomLink>
+            <CustomLink to="faq">
+              <MenuLink top={isTop} hide={true}>
+                FAQ
+              </MenuLink>
             </CustomLink>
             <CustomLink to="sponsers">
-              <MenuLink hide={true}>Sponsors</MenuLink>
+              <MenuLink top={isTop} hide={true}>
+                Sponsors
+              </MenuLink>
             </CustomLink>
-            <MenuLink onClick={this.handleTicketBuy} ghost={true}>
+            <CustomLink to="community">
+              <MenuLink top={isTop} hide={true}>
+                Community
+              </MenuLink>
+            </CustomLink>
+            <MenuLink top={isTop} onClick={this.handleTicketBuy} ghost={true}>
               티켓구입
             </MenuLink>
           </Menu>

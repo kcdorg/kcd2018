@@ -12,6 +12,7 @@ import FAQSection from './components/FAQSection'
 import CommunitySection from './components/CommunitySection'
 import InquirySection from './components/InquirySection'
 import NavigationBar from './components/Navigation'
+import { Element } from 'react-scroll'
 
 const Wrapper = styled.div`
   width: 100%;
@@ -29,13 +30,25 @@ class App extends React.Component {
         <Wrapper>
           <Header />
           <IntroSection />
-          <SimpleScheduleSection />
-          <SpeakerSection />
-          <LocationSection />
+          <Element name="schedule">
+            <SimpleScheduleSection />
+          </Element>
+          <Element name="speakers">
+            <SpeakerSection />
+          </Element>
+          <Element name="location">
+            <LocationSection />
+          </Element>
           <PriceSection />
-          <FAQSection />
-          <PatronSection />
-          <CommunitySection />
+          <Element name="faq">
+            <FAQSection />
+          </Element>
+          <Element name="sponsers">
+            <PatronSection />
+          </Element>
+          <Element name="community">
+            <CommunitySection />
+          </Element>
           <InquirySection />
           <Footer />
         </Wrapper>

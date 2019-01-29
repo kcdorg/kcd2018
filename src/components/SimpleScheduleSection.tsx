@@ -53,22 +53,22 @@ const Red = styled.div`
   color: orangered;
 `
 
-const FileLink = styled.a.attrs({
-  target: '_blank'
-})`
-  color: lightcoral;
-  text-decoration: none;
-`
+// const FileLink = styled.a.attrs({
+//   target: '_blank',
+// })`
+//   color: lightcoral;
+//   text-decoration: none;
+// `
 
-interface FileProps {
-  href: string
-}
+// interface FileProps {
+//   href: string
+// }
 
-const File: StatelessComponent<FileProps> = ({ children, href }) => (
-  <div style={{ marginTop: '10px' }}>
-    <FileLink href={href}>{children ? children : '발표자료'}</FileLink>
-  </div>
-)
+// const File: StatelessComponent<FileProps> = ({ children, href }) => (
+//   <div style={{ marginTop: '10px' }}>
+//     <FileLink href={href}>{children ? children : '발표자료'}</FileLink>
+//   </div>
+// )
 
 const SimpleScheduleSection: StatelessComponent<{}> = () => (
   <SectionTemplate title="스케쥴" iconClass="fa fa-clock-o fa-2x">
@@ -77,11 +77,11 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
         <thead>
           <Row>
             <Header rowSpan={2}>시간</Header>
-            <Header>Track Ⅰ</Header>
-            <Header>Track Ⅱ</Header>
-            <Header>Track Ⅲ</Header>
-            <Header>Track IV</Header>
-            <Header>Track V</Header>
+            <Header>Track Ⅰ 2)</Header>
+            <Header>Track Ⅱ 2)</Header>
+            <Header>Track Ⅲ 3)</Header>
+            <Header>Track IV 4)</Header>
+            <Header>Track V 4)</Header>
           </Row>
           <Row>
             <Header>11층 A</Header>
@@ -94,133 +94,171 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
         <tbody>
           <Row>
             <Header>10:00 ~ 10:30</Header>
-            <Data colSpan={5}>Registration</Data>
+            <Data colSpan={5}>참가 등록</Data>
           </Row>
           <Row>
-            <Header>10:30 ~ 11:10</Header>
-            <Data rowSpan={2} colSpan={3}>
-              커뮤니티 대담<br />커뮤니티 입문하기
+            <Header>10:30 ~ 11:00</Header>
+            <Data rowSpan={3} colSpan={3}>
+              슬기로운 커뮤니티 생활 (부제 : 커뮤니티를 통해 성장하는 방법)
+              <br /> 커뮤니티 대담
             </Data>
             <Data>
-              IoT 로 농업데이터 수집하는 개발자 커뮤니티 - 컨트리뷰터 모집<br />
-              <br />김종광 (IoT Labs)
+              Azure 학습과 사용자 바이블
               <br />
-              <File href="https://www.dropbox.com/s/tmig6fy27xyqbe3/2017_Contributhon_IoTLabs.pdf?dl=0" />
+              김세준(MS MVP)
+              {/* <File href="https://www.dropbox.com/s/tmig6fy27xyqbe3/2017_Contributhon_IoTLabs.pdf?dl=0" /> */}
             </Data>
-            <Data rowSpan={2} />
+            <Data rowSpan={3} />
           </Row>
           <Row>
-            <Header>11:10 ~ 11:50</Header>
+            <Header>11:00 ~ 11:30</Header>
             <Data>
-              Elastic에서 원격으로 일하는 방법들<br />
-              <br />김종민 (Elastic)
+              변화는 행동을 채움으로 시작된다.
               <br />
-              <File href="https://s3.ap-northeast-2.amazonaws.com/kr.elastic.co/docs/jongmin-kim-Korea-Community-Day.pdf" />
+              김정환
+              <br />
+              (널채움(nullfull))
+              {/* <File href="https://s3.ap-northeast-2.amazonaws.com/kr.elastic.co/docs/jongmin-kim-Korea-Community-Day.pdf" /> */}
             </Data>
           </Row>
           <Row>
-            <Header>11:50 ~ 13:00</Header>
+            <Header>11:30 ~ 12:00</Header>
+            <Data>
+              Elastic
+              {/* <File href="https://s3.ap-northeast-2.amazonaws.com/kr.elastic.co/docs/jongmin-kim-Korea-Community-Day.pdf" /> */}
+            </Data>
+          </Row>
+          {/* <Row> */}
+          <Row>
+            <Header>12:00 ~ 13:00</Header>
             <Data colSpan={5}>Lunch</Data>
           </Row>
           <Row>
-            <Header>13:00 ~ 13:40</Header>
+            <Header>13:00 ~ 13:30</Header>
             <Data>
-              '모두의 손에 딥러닝 툴을...'<br />
-              <br />김태영, 전미정(Keras Korea)
+              스타트업이 원하는 개발자, SI / 대기업 출신들도 가능할까?
               <br />
-              <File href="https://tykimos.github.io/2018/02/24/Deep_Learning_Tool_in_Everyones_hands/" />
+              <br />
+              신현묵
+              {/* <br />
+              <File href="https://tykimos.github.io/2018/02/24/Deep_Learning_Tool_in_Everyones_hands/" /> */}
             </Data>
             <Data>
-              차곡차곡 쉽게 알아가는 Elasticsearch와 Node.js<br />
-              <br />황희정(자바카페)
+              Modern 하게 Codeigniter4 하지 않겠는가?
               <br />
-              <File href="http://tech.javacafe.io/2018/02/24/%EC%B0%A8%EA%B3%A1%EC%B0%A8%EA%B3%A1_%EC%89%BD%EA%B2%8C_%EC%95%8C%EC%95%84%EA%B0%80%EB%8A%94_Elasticsearch%EC%99%80_Nodejs/" />
+              <br />
+              김성현(Codeigniter 한국사용자포럼)
+              {/* <br />
+              <File href="http://tech.javacafe.io/2018/02/24/%EC%B0%A8%EA%B3%A1%EC%B0%A8%EA%B3%A1_%EC%89%BD%EA%B2%8C_%EC%95%8C%EC%95%84%EA%B0%80%EB%8A%94_Elasticsearch%EC%99%80_Nodejs/" /> */}
             </Data>
             <Data>
-              클라우드 API를 활용하여 FirstApp 모바일 앱 빠르게 구현하기<br />
-              <br />최영락 (오픈스택 한국 커뮤니티)
-              <br />
-              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%8E%E1%85%AC%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A1%E1%86%A8(%E1%84%8B%E1%85%A9%E1%84%91%E1%85%B3%E1%86%AB%E1%84%89%E1%85%B3%E1%84%90%E1%85%A2%E1%86%A8)-%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A1%E1%84%8B%E1%85%AE%E1%84%83%E1%85%B3+API%E1%84%85%E1%85%B3%E1%86%AF+%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%84%8B%E1%85%A7+FirstApp+%E1%84%86%E1%85%A9%E1%84%87%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF+%E1%84%8B%E1%85%A2%E1%86%B8+%E1%84%88%E1%85%A1%E1%84%85%E1%85%B3%E1%84%80%E1%85%A6+%E1%84%80%E1%85%AE%E1%84%92%E1%85%A7%E1%86%AB%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5.pdf" />
+              PyTorch C++ API 입문
+              <br /> 옥찬호(C++ Korea)
+              {/* <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%8E%E1%85%AC%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A1%E1%86%A8(%E1%84%8B%E1%85%A9%E1%84%91%E1%85%B3%E1%86%AB%E1%84%89%E1%85%B3%E1%84%90%E1%85%A2%E1%86%A8)-%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A1%E1%84%8B%E1%85%AE%E1%84%83%E1%85%B3+API%E1%84%85%E1%85%B3%E1%86%AF+%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%84%8B%E1%85%A7+FirstApp+%E1%84%86%E1%85%A9%E1%84%87%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF+%E1%84%8B%E1%85%A2%E1%86%B8+%E1%84%88%E1%85%A1%E1%84%85%E1%85%B3%E1%84%80%E1%85%A6+%E1%84%80%E1%85%AE%E1%84%92%E1%85%A7%E1%86%AB%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5.pdf" /> */}
             </Data>
-            <Data rowSpan={4}>
+            <Data rowSpan={5}>
               <Red>Workshop 1</Red>
-              <br />Custom Vision으로 나만의 이미지 분류 모델 만들어보기<br />
-              <br />김은지 (Microsoft)
               <br />
-              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%80%E1%85%B5%E1%86%B7%E1%84%8B%E1%85%B3%E1%86%AB%E1%84%8C%E1%85%B5(MS%E1%84%8B%E1%85%AF%E1%84%8F%E1%85%B3%E1%84%89%E1%85%A3%E1%86%B8)_KCD_Custom+Vision+HOL_EUNK.pdf" />
+              도커와 쿠버네티스를 활용하여 간단한 웹 서비스 쿠축해보기
+              <br />
+              <br />
+              최용호(자바카페)
+              {/* <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%80%E1%85%B5%E1%86%B7%E1%84%8B%E1%85%B3%E1%86%AB%E1%84%8C%E1%85%B5(MS%E1%84%8B%E1%85%AF%E1%84%8F%E1%85%B3%E1%84%89%E1%85%A3%E1%86%B8)_KCD_Custom+Vision+HOL_EUNK.pdf" /> */}
             </Data>
-            <Data rowSpan={4}>
+            <Data rowSpan={5}>
               <Red>Workshop 2</Red>
-              <br />Docker과 Azure<br />
-              <br />김세준 Korea Azure User Group (KRAZURE)
-              <File href="https://goo.gl/WgV3PW" />
+              <br />
+              TensorFlow 2.0 on Backend AI
+              <br />
+              <br />
+              조만석, 김정묵 (Backend.Ai Usergroup)
+              {/* <File href="https://goo.gl/WgV3PW" /> */}
             </Data>
           </Row>
           <Row>
-            <Header>13:40 ~ 14:20</Header>
+            <Header>13:30 ~ 14:00</Header>
             <Data>
-              ASP.NET, Angular, Azure를 사용한 웹 개발 빠르게 살펴보기<br />
-              <br />박용준 (Taeyo.NET)
+              순수 함수형 스칼라로 웹 애플리케이션 만들기
               <br />
-              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/ASP.NET+Core+and+Angular+and+Azure+20180224.pptx" />
+              <br />
+              박지수(라 스칼라 코딩단)
+              {/* <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/ASP.NET+Core+and+Angular+and+Azure+20180224.pptx" /> */}
             </Data>
             <Data>
-              IntelliJ IDEA만으로 개발하기<br />
-              <br />이동욱 (JetBrains Korea User Group)
+              Modularizing Chromium
+              <br />
+              <br />
+              방진호,고병권(모닝클래스)
             </Data>
             <Data>
-              Hello world 에서 패키징까지<br />
-              <br />김진석 (우분투 한국커뮤니티)
+              Migration to MongoDB <br />
               <br />
-              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%80%E1%85%B5%E1%86%B7%E1%84%8C%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8(%E1%84%8B%E1%85%AE%E1%84%87%E1%85%AE%E1%86%AB%E1%84%90%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%80%E1%85%AE%E1%86%A8)_Hello%2C+world%E1%84%8B%E1%85%A6%E1%84%89%E1%85%A5+%E1%84%91%E1%85%A2%E1%84%8F%E1%85%B5%E1%84%8C%E1%85%B5%E1%86%BC%E1%84%81%E1%85%A1%E1%84%8C%E1%85%B5.pdf" />
+              김동한(MongoDB Korea)
+              {/* <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%80%E1%85%B5%E1%86%B7%E1%84%8C%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8(%E1%84%8B%E1%85%AE%E1%84%87%E1%85%AE%E1%86%AB%E1%84%90%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%80%E1%85%AE%E1%86%A8)_Hello%2C+world%E1%84%8B%E1%85%A6%E1%84%89%E1%85%A5+%E1%84%91%E1%85%A2%E1%84%8F%E1%85%B5%E1%84%8C%E1%85%B5%E1%86%BC%E1%84%81%E1%85%A1%E1%84%8C%E1%85%B5.pdf" /> */}
             </Data>
           </Row>
           <Row>
-            <Header>14:20 ~ 14:40</Header>
+            <Header>14:00 ~ 14:20</Header>
             <Data colSpan={3}>Break</Data>
           </Row>
           <Row>
-            <Header>14:40 ~ 15:20</Header>
+            <Header>14:20 ~ 14:50</Header>
             <Data>
-              What’s new in MySQL8.0<br />
-              <br />박혜선 (오라클)
+              Top 10 Reasons for Using MySQL 8.0
               <br />
-              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%87%E1%85%A1%E1%86%A8%E1%84%92%E1%85%A8%E1%84%89%E1%85%A5%E1%86%AB(%E1%84%8B%E1%85%A9%E1%84%85%E1%85%A1%E1%84%8F%E1%85%B3%E1%86%AF)_WhatsNewInMySQL8.0_KR_V2.pdf" />
+              <br />
+              박혜선 (오라클)
+              {/* <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%87%E1%85%A1%E1%86%A8%E1%84%92%E1%85%A8%E1%84%89%E1%85%A5%E1%86%AB(%E1%84%8B%E1%85%A9%E1%84%85%E1%85%A1%E1%84%8F%E1%85%B3%E1%86%AF)_WhatsNewInMySQL8.0_KR_V2.pdf" /> */}
             </Data>
             <Data>
-              가내수공 App for your Smartwatch (feat. Gear S2/3)<br />
-              <br />엄지용 (EFL 한국 커뮤니티)
+              DevOps Korea의 활동 방향 (커뮤니티 운영을 위한 고민들)
               <br />
-              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/efl_kcd2018.pdf" />
+              <br />
+              조철현(DevOps Korea)
+              {/* <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/efl_kcd2018.pdf" /> */}
             </Data>
             <Data>
-              C++ 프로젝트의 자동 빌드화<br />
-              <br />박동하 (C++ Korea)
+              오픈소스 커뮤니티 생태계 분석
               <br />
-              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%87%E1%85%A1%E1%86%A8%E1%84%83%E1%85%A9%E1%86%BC%E1%84%92%E1%85%A1(C%2B%2B%E1%84%8F%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A1)_Build+Automation+of+C%2B%2B+Project.pptx" />
+              <br />
+              김호진(OpenStack Korea)
+              {/* <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%87%E1%85%A1%E1%86%A8%E1%84%83%E1%85%A9%E1%86%BC%E1%84%92%E1%85%A1(C%2B%2B%E1%84%8F%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A1)_Build+Automation+of+C%2B%2B+Project.pptx" /> */}
             </Data>
           </Row>
           <Row>
-            <Header>15:20 ~ 16:00</Header>
+            <Header>14:50 ~ 15:20</Header>
             <Data>
-              챗봇 서비스에서 MongoDB의 활용<br />
-              <br />김동한 (MongoDB Korea)
+              Kubernetes와 Serverless의 만남 – Knative
               <br />
-              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%80%E1%85%B5%E1%86%B7%E1%84%83%E1%85%A9%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB(MongoDB)_MongoDB+in+Chat+Bot+-+KCD+2018+Public.pdf" />
+              <br />
+              남정현(KRAZURE)
+              {/* <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%80%E1%85%B5%E1%86%B7%E1%84%83%E1%85%A9%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB(MongoDB)_MongoDB+in+Chat+Bot+-+KCD+2018+Public.pdf" /> */}
             </Data>
             <Data>
-              About Open Source Community in Japan<br />
-              <br />Nogata Jun (Debian JP, 영어발표)
+              “좋은 개발자” 프레임 아작내기
               <br />
-              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/NogataJun(Japan)-kcd_opensource_community.pdf" />
+              <br />
+              김요한(React Korea)
+              {/* <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/NogataJun(Japan)-kcd_opensource_community.pdf" /> */}
             </Data>
             <Data>
-              I am ASP.NET Core Razor Pages!<br />
-              <br />한상훈 (ASP.NET Korea User Group)
+              매칭과 추천시스템 입문
               <br />
-              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%92%E1%85%A1%E1%86%AB%E1%84%89%E1%85%A1%E1%86%BC%E1%84%92%E1%85%AE%E1%86%AB(ASP.Net)_I+am+ASP.NET+Core+Razor+Pages.pdf" />
+              <br />
+              한이상열 (데이터뽀개기)
+              {/* <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%92%E1%85%A1%E1%86%AB%E1%84%89%E1%85%A1%E1%86%BC%E1%84%92%E1%85%AE%E1%86%AB(ASP.Net)_I+am+ASP.NET+Core+Razor+Pages.pdf" /> */}
             </Data>
-            <Data rowSpan={4}>
+            {/* <Data rowSpan={4}>
               <Red>Workshop 3</Red>
               <br />BlockChain In BitCoin<br />
               <br />이태영(Jboss User Group)
@@ -231,66 +269,119 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
               <br />캐글뽀개기 커뮤니티
               <br />
               <File href="https://github.com/KaggleBreak/walkingkaggle/tree/master/kcd2018" />
+            </Data> */}
+          </Row>
+          <Row>
+            <Header>15:20 ~ 15:40</Header>
+            <Data colSpan={5}>Break</Data>
+          </Row>
+          <Row>
+            <Header>15:40 ~ 16:10</Header>
+            <Data>
+              Scaffold(JHipster) project를 이용한 MSA 환경 구축
+              <br />
+              <br />
+              장진달(SLIPP)
+              {/* <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/KCD_Spark_Summit_%E1%84%80%E1%85%B5%E1%86%B7%E1%84%89%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%AE.pdf" /> */}
+            </Data>
+            <Data>
+              단군소프트
+              <br />
+              <br />-
+              {/* <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/7th_KCD_HarmonyCar_funfunyoo.pptx" /> */}
+            </Data>
+            <Data rowSpan={5}>
+              <Red>Workshop 3</Red>
+              <br />
+              가장 빨리 만나는 챗봇 프로그래밍 with Bot Framework
+              <br />
+              <br />
+              김영욱(MS)
+              {/* <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%87%E1%85%A1%E1%86%A8%E1%84%92%E1%85%A8%E1%84%8B%E1%85%AE%E1%86%BC(%E1%84%87%E1%85%A1%E1%84%87%E1%85%A6%E1%86%AF%E1%84%91%E1%85%B5%E1%84%89%E1%85%B1)%E1%84%92%E1%85%A1%E1%86%AB%E1%84%80%E1%85%AE%E1%86%A8%E1%84%8B%E1%85%A5%E1%84%8B%E1%85%B5%E1%86%B7%E1%84%87%E1%85%A6%E1%84%83%E1%85%B5%E1%86%BC.pdf" /> */}
+            </Data>
+            <Data rowSpan={5}>
+              <Red>Workshop 4</Red>
+              <br />
+              모두의 손에 딥러닝 툴을…
+              <br />
+              <br />
+              케라스 코리아
+              {/* <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%87%E1%85%A1%E1%86%A8%E1%84%92%E1%85%A8%E1%84%8B%E1%85%AE%E1%86%BC(%E1%84%87%E1%85%A1%E1%84%87%E1%85%A6%E1%86%AF%E1%84%91%E1%85%B5%E1%84%89%E1%85%B1)%E1%84%92%E1%85%A1%E1%86%AB%E1%84%80%E1%85%AE%E1%86%A8%E1%84%8B%E1%85%A5%E1%84%8B%E1%85%B5%E1%86%B7%E1%84%87%E1%85%A6%E1%84%83%E1%85%B5%E1%86%BC.pdf" /> */}
+            </Data>
+            <Data rowSpan={5} />
+          </Row>
+          <Row>
+            <Header>16:10 ~ 16:40</Header>
+            <Data>
+              JavaScript 엔지니어들이 말하는 TypeScript 를 애정하는 이유
+              <br />
+              <br />
+              이웅재(TypeScript Korea)
+              {/* <br />
+              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%87%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A1%E1%86%BC%E1%84%92%E1%85%A7%E1%86%AB(%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%E1%84%80%E1%85%AA%E1%84%86%E1%85%AE%E1%84%80%E1%85%AA%E1%86%AB%E1%84%92%E1%85%A1%E1%86%B8%E1%84%82%E1%85%B5%E1%84%83%E1%85%A1%E1%84%86%E1%85%A1%E1%86%AB)_%E1%84%86%E1%85%AE%E1%86%AF%E1%84%8B%E1%85%A5%E1%84%87%E1%85%A9%E1%84%8C%E1%85%B5+%E1%84%8B%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%A1%E1%86%BB%E1%84%89%E1%85%B3%E1%86%B8%E1%84%82%E1%85%B5%E1%84%83%E1%85%A1%E1%84%86%E1%85%A1%E1%86%AB+V8.pptx" /> */}
+            </Data>
+            <Data>
+              "SPA with C#, Blazor"
+              <br />
+              <br />
+              원기욱(ASP.NET Korea User Group)
+              {/* <br />
+              <File href="http://slides.com/chequer/axdatagrid-first" /> */}
             </Data>
           </Row>
           <Row>
-            <Header>16:00 ~ 16:30</Header>
-            <Data colSpan={3}>Break</Data>
+            <Header>16:40 ~ 17:00</Header>
+            <Data colSpan={2}>Break</Data>
           </Row>
           <Row>
-            <Header>16:30 ~ 17:10</Header>
+            <Header>17:00 ~ 17:30</Header>
             <Data>
-              Spark Summit Europe 발표 & 참가기<br />
-              <br />김상우(스파크 사용자 모임)
+              나는 왜 React 와 Typescript를 선택하게 되었나
               <br />
-              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/KCD_Spark_Summit_%E1%84%80%E1%85%B5%E1%86%B7%E1%84%89%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%AE.pdf" />
+              <br />
+              장기영(JSDEVKR)
             </Data>
             <Data>
-              Beyond Automotive<br />
-              <br />유명환(하모니카 (HarmonyCar))
+              대한민국에서 닷넷 개발자로 살아가기
               <br />
-              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/7th_KCD_HarmonyCar_funfunyoo.pptx" />
-            </Data>
-            <Data>
-              한국어 임베딩<br />
-              <br />박혜웅(바벨피쉬)
               <br />
-              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%87%E1%85%A1%E1%86%A8%E1%84%92%E1%85%A8%E1%84%8B%E1%85%AE%E1%86%BC(%E1%84%87%E1%85%A1%E1%84%87%E1%85%A6%E1%86%AF%E1%84%91%E1%85%B5%E1%84%89%E1%85%B1)%E1%84%92%E1%85%A1%E1%86%AB%E1%84%80%E1%85%AE%E1%86%A8%E1%84%8B%E1%85%A5%E1%84%8B%E1%85%B5%E1%86%B7%E1%84%87%E1%85%A6%E1%84%83%E1%85%B5%E1%86%BC.pdf" />
+              박용준, 한상훈(Taeyo.Net)
             </Data>
           </Row>
           <Row>
-            <Header>17:10 ~ 17:50</Header>
+            <Header>17:30 ~ 18:00</Header>
             <Data>
-              물어본적 없습니다만,(부제:믿고 거르는 커리어 이야기)<br />
+              33명이 함께한 10 minutes to pandas 번역 이야기
               <br />
-              박상현(코딩이랑 무관합니다만)
               <br />
-              <File href="https://s3.ap-northeast-2.amazonaws.com/festa-temp/kcd2018-presentations/%E1%84%87%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A1%E1%86%BC%E1%84%92%E1%85%A7%E1%86%AB(%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%E1%84%80%E1%85%AA%E1%84%86%E1%85%AE%E1%84%80%E1%85%AA%E1%86%AB%E1%84%92%E1%85%A1%E1%86%B8%E1%84%82%E1%85%B5%E1%84%83%E1%85%A1%E1%84%86%E1%85%A1%E1%86%AB)_%E1%84%86%E1%85%AE%E1%86%AF%E1%84%8B%E1%85%A5%E1%84%87%E1%85%A9%E1%84%8C%E1%85%B5+%E1%84%8B%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%A1%E1%86%BB%E1%84%89%E1%85%B3%E1%86%B8%E1%84%82%E1%85%B5%E1%84%83%E1%85%A1%E1%84%86%E1%85%A1%E1%86%AB+V8.pptx" />
+              김지은(데잇걸즈)
             </Data>
             <Data>
-              Webpack, ES6, TS로 만든 React datagrid 컴포넌트 제작기<br />
+              코딩하는 공익 – 아직 세상을 바꾸고 싶은 개발자에게
               <br />
-              장기영(자바스크립트 개발자 포럼)
               <br />
-              <File href="http://slides.com/chequer/axdatagrid-first" />
-            </Data>
-            <Data>
-              Google Polymer in Action<br />
-              <br />신정규(TNF/Needlworks)
-              <File href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.slideshare.net%2Finureyes%2Fgoogle-polymer-in-action&h=ATP_ZWQzJgYpxTsIpE_4Mz_X9HyQ2Cq6gDXD9f6lrPMurI1o7n0yd9dcMT-Qe2ETvfkYqMlCDbym3WxVt3H5qxYvDgcUM2klXgvtHflZdRhEKXhqh7gPkcIlztI" />
+              반병현(코딩과무관합니다만)
             </Data>
           </Row>
           <Row>
-            <Header>17:50 ~ 18:00</Header>
-            <Data colSpan={5}>경품추첨 및 마무리</Data>
+            <Header>18:00 ~ 18:20</Header>
+            <Data colSpan={5} />
+          </Row>
+          <Row>
+            <Header>18:20 ~ 20:00</Header>
+            <Data colSpan={5}>BOF(커뮤니티 및 참가자 전원 참석 가능)</Data>
           </Row>
         </tbody>
       </Table>
     </Wrapper>
     <Notice>
-      ※ Workshop은 개인 노트북을 지참하셔야 합니다. <br />Hands on Lab 형태로
-      진행하기에 참가를 원하는 경우 참가하고자 하는 Workshop을 작성하시어
-      spicalong@gmail.com으로 별도 신청을 부탁드립니다.
+      ※ Workshop은 개인 노트북을 지참하셔야 합니다. <br />※ 참가자 모집 마감 후
+      개별적으로 Workshop 및 BOF 참가 관련하여 연락드릴 예정이오니 참고하여
+      주시기 바랍니다.
     </Notice>
   </SectionTemplate>
 )
