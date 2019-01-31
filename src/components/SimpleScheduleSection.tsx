@@ -113,7 +113,7 @@ const SimpleScheduleSection: StatelessComponent<{}> = () => (
           <Row>
             <Header>11:00 ~ 11:30</Header>
             <Data>
-              커뮤니티 지속하기 / 여남뉴스 개발기.
+            변화는 행동을 채움으로 시작된다 "커뮤니티 지속하기/여남뉴스 개발기" 
               <br />
               김정환
               <br />

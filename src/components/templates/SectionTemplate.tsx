@@ -14,7 +14,7 @@ export const IconRow = styled.div`
 `
 
 export const Icon = styled.span`
-  color: #e18970;
+  color: #f83600;
 `
 
 export const Title = styled.h4`

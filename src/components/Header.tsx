@@ -151,12 +151,12 @@ const Header: React.StatelessComponent<{}> = () => (
     <Title>Korea Community Day 2019</Title>
     <Bottom>
       2019년 2월 00일(토) 10:30 / Microsoft Korea 11층
-      <a target="_blank" href="https://festa.io/">
+      <a target="_blank" href="https://festa.io/events/200">
         {/* <NewRegisterButton>티켓 구매</NewRegisterButton> */}
       </a>
     </Bottom>
     <SubTitle />
-    <a target="_blank" href="https://festa.io/events/6">
+    <a target="_blank" href="https://festa.io/events/200">
       <RegisterButton>티켓 구매하러 가기</RegisterButton>
     </a>
   </Wrapper>
